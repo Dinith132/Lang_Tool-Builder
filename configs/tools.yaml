@@ -1,0 +1,6 @@
+
+tools:
+  - name: "subtract"
+    module: "tools.math_tools"
+    function: "subtract"
+    description: "Subtract two numbers from string 'a,b'"
