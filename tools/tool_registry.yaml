@@ -1,0 +1,11 @@
+- created_at: '2025-07-24T23:11:50.016861'
+  description: Calculates the future value of an investment with compound interest
+    given principal, annual interest rate (as a decimal), number of years, and number
+    of times compounded per year as comma-separated input.
+  name: compound_interest_calculator
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-24T23:15:02.105359'
+  description: Calculates Body Mass Index (BMI) given weight in kilograms and height
+    in meters as comma-separated input (e.g., "70,1.75").
+  name: calculate_bmi
+  saved_in: tools/generated_tools.py

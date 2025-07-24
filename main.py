@@ -120,8 +120,8 @@ def tool_testing(tools):
 # Example usage
 if __name__ == "__main__":
     config_path = os.path.join(project_root, "tools.yaml")
-    # write_tool_file()  # Generate tools/math_tools.py
-    # write_config_file(config_path)  # Generate tools.yaml
+    write_tool_file()  # Generate tools/math_tools.py
+    write_config_file(config_path)  # Generate tools.yaml
     tools = load_tools_from_yaml(config_path)
     print(f"Loaded tools: {[t.name if hasattr(t, 'name') else t.__name__ for t in tools]}")
 
