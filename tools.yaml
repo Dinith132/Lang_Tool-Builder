@@ -1,7 +1,4 @@
 tools:
-- description: Subtract two numbers from string 'a,b'
-  module: tools.math_tools
-  name: subtract
 - description: Add two numbers from string 'a,b'
   module: tools.math_tools
   name: addition

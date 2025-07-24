@@ -32,6 +32,10 @@ def addition(input: str) -> float:
     a, b = map(float, input.split(","))
     return a + b
 """
+
+#     code= """
+# \nfrom langchain_core.tools import tool\n\n@tool\ndef get(input: str) -> float:\n    """\n    Calculates the get summation of 2 numbers.\n\n    The input is a string containing two numbers separated by a comma, e.g., \'4.0,5\'.\n    The function parses these numbers, performs the operation, and returns the result as a float.\n\n    Args:\n        input (str): A string containing two numbers separated by a comma.\n\n    Returns:\n        float: The result of the operation.\n    """\n    try:\n        num1_str, num2_str = input.split(\',\')\n        num1 = float(num1_str.strip())\n        num2 = float(num2_str.strip())\n        return num1 + num2  # Modify this based on the operation in description\n    except ValueError:\n        raise ValueError("Invalid input format. Please provide two numbers separated by a comma, e.g., \'4.0,5\'")\n
+# """
     os.makedirs("tools", exist_ok=True)
     tool_file = os.path.join(project_root, "tools/math_tools.py")
     with open(tool_file, "w") as f:
@@ -105,10 +109,21 @@ def load_tools_from_yaml(config_path: str) -> list:
 
     return tools
 
+def tool_testing(tools):
+    for tool_func in tools:
+        try:
+            result = tool_func.invoke({"input":"1,2"})
+            print(f"{tool_func.name}('5,3') => {result}")
+        except Exception as e:
+            print(f"Error calling {tool_func.name}: {e}")
+
 # Example usage
 if __name__ == "__main__":
     config_path = os.path.join(project_root, "tools.yaml")
-    write_tool_file()  # Generate tools/math_tools.py
-    write_config_file(config_path)  # Generate tools.yaml
+    # write_tool_file()  # Generate tools/math_tools.py
+    # write_config_file(config_path)  # Generate tools.yaml
     tools = load_tools_from_yaml(config_path)
     print(f"Loaded tools: {[t.name if hasattr(t, 'name') else t.__name__ for t in tools]}")
+
+    print("==========testing==============")
+    tool_testing(tools=tools)
