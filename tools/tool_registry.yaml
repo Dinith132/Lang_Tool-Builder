@@ -11,19 +11,17 @@
     or phrase.
   name: tool_lookup
   saved_in: tools/base_tools.py
-- created_at: '2025-07-25T22:47:21.578184'
-  description: 'Multiplies two numbers and returns the product. Input: two comma-separated
-    floats (e.g., "339, 77")'
-  name: multiply_numbers
+- created_at: '2025-07-26T18:20:22.655880'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., "10.0,2.0")'
+  name: divide_two_numbers
   saved_in: tools/generated_tools.py
-- created_at: '2025-07-25T22:47:49.327157'
-  description: 'Performs a mathematical calculation (multiplication) based on the
-    given expression. Input: string in the format ''number * number'' (e.g., ''36
-    * 993'')'
-  name: calculator
+- created_at: '2025-07-26T18:24:57.416639'
+  description: 'Divides two numbers. Input: two comma-separated floats (e.g., "339,77")'
+  name: divide_numbers
   saved_in: tools/generated_tools.py
-- created_at: '2025-07-25T22:48:47.183538'
-  description: 'Multiplies two integers. Input: two comma-separated integers (e.g.,
-    "36, 993")'
-  name: multiply
+- created_at: '2025-07-26T18:25:02.009139'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., "10.0,2.0")'
+  name: custom_divide
   saved_in: tools/generated_tools.py

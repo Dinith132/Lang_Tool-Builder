@@ -1,23 +1,25 @@
 from datetime import datetime
 from langchain_core.tools import tool
-@tool
-def multiply_numbers(input: str) -> float:
-    """
-    Multiplies two numbers and returns the product. Input: two comma-separated floats (e.g., "339, 77")
-    """
-    parts = input.split(','); return float(parts[0]) * float(parts[1])
+
 
 @tool
-def calculator(input: str) -> float:
+def divide_two_numbers(input: str) -> float:
     """
-    Performs a mathematical calculation (multiplication) based on the given expression. Input: string in the format 'number * number' (e.g., '36 * 993')
+    Divides the first number by the second number. Input: a string containing two comma-separated floats (e.g., "10.0,2.0")
     """
-    return float(input.split(' * ')[0]) * float(input.split(' * ')[1])
+    parts = input.split(','); return float(parts[0]) / float(parts[1])
 
 @tool
-def multiply(input: str) -> float:
+def divide_numbers(input: str) -> float:
     """
-    Multiplies two integers. Input: two comma-separated integers (e.g., "36, 993")
+    Divides two numbers. Input: two comma-separated floats (e.g., "339,77")
     """
-    return int(input.split(',')[0].strip()) * int(input.split(',')[1].strip())
+    return float(input.split(',')[0]) / float(input.split(',')[1]) if float(input.split(',')[1]) != 0 else float('nan')
+
+@tool
+def custom_divide(input: str) -> float:
+    """
+    Divides the first number by the second number. Input: a string containing two comma-separated floats (e.g., "10.0,2.0")
+    """
+    return float(input.split(',')[0]) / float(input.split(',')[1])
 
