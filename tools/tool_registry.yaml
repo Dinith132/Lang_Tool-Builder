@@ -1,11 +1,29 @@
-- created_at: '2025-07-24T23:11:50.016861'
-  description: Calculates the future value of an investment with compound interest
-    given principal, annual interest rate (as a decimal), number of years, and number
-    of times compounded per year as comma-separated input.
-  name: compound_interest_calculator
+- created_at: '2025-07-25T00:00:00'
+  description: Search the web for current or general knowledge using DuckDuckGo.
+  name: search_duckduckgo
+  saved_in: tools/base_tools.py
+- created_at: '2025-07-25T00:01:00'
+  description: Creates a new LangChain tool and appends it to tools/generated_tools.py.
+  name: tool_generator
+  saved_in: tools/base_tools.py
+- created_at: '2025-07-25T00:02:00'
+  description: Searches for existing tools in the registry that match the given keyword
+    or phrase.
+  name: tool_lookup
+  saved_in: tools/base_tools.py
+- created_at: '2025-07-25T22:47:21.578184'
+  description: 'Multiplies two numbers and returns the product. Input: two comma-separated
+    floats (e.g., "339, 77")'
+  name: multiply_numbers
   saved_in: tools/generated_tools.py
-- created_at: '2025-07-24T23:15:02.105359'
-  description: Calculates Body Mass Index (BMI) given weight in kilograms and height
-    in meters as comma-separated input (e.g., "70,1.75").
-  name: calculate_bmi
+- created_at: '2025-07-25T22:47:49.327157'
+  description: 'Performs a mathematical calculation (multiplication) based on the
+    given expression. Input: string in the format ''number * number'' (e.g., ''36
+    * 993'')'
+  name: calculator
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-25T22:48:47.183538'
+  description: 'Multiplies two integers. Input: two comma-separated integers (e.g.,
+    "36, 993")'
+  name: multiply
   saved_in: tools/generated_tools.py

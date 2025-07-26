@@ -1,15 +1,23 @@
+from datetime import datetime
 from langchain_core.tools import tool
 @tool
-def compound_interest_calculator(input: str) -> float:
+def multiply_numbers(input: str) -> float:
     """
-    Calculates the future value of an investment with compound interest given principal, annual interest rate (as a decimal), number of years, and number of times compounded per year as comma-separated input.
+    Multiplies two numbers and returns the product. Input: two comma-separated floats (e.g., "339, 77")
     """
-    parts = input.split(','); P = float(parts[0].strip()); r = float(parts[1].strip()); t = float(parts[2].strip()); n = float(parts[3].strip()); A = P * (1 + r / n)**(n * t); return A
+    parts = input.split(','); return float(parts[0]) * float(parts[1])
 
 @tool
-def calculate_bmi(input: str) -> float:
+def calculator(input: str) -> float:
     """
-    Calculates Body Mass Index (BMI) given weight in kilograms and height in meters as comma-separated input (e.g., "70,1.75").
+    Performs a mathematical calculation (multiplication) based on the given expression. Input: string in the format 'number * number' (e.g., '36 * 993')
     """
-    weight_str, height_str = input.split(','); weight = float(weight_str); height = float(height_str); return weight / (height ** 2)
+    return float(input.split(' * ')[0]) * float(input.split(' * ')[1])
+
+@tool
+def multiply(input: str) -> float:
+    """
+    Multiplies two integers. Input: two comma-separated integers (e.g., "36, 993")
+    """
+    return int(input.split(',')[0].strip()) * int(input.split(',')[1].strip())
 
