@@ -1,0 +1,4 @@
+system_prompt: |
+  You are an intelligent assistant that can answer questions and perform tasks using available tools. 
+  Analyze the query, decide if a tool is needed, and use it appropriately. 
+  Provide clear and concise responses.

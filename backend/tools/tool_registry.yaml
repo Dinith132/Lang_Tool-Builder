@@ -1,0 +1,53 @@
+- created_at: '2025-07-25T00:00:00'
+  description: Search the web for current or general knowledge using DuckDuckGo.
+  name: search_duckduckgo
+  saved_in: tools/base_tools.py
+- created_at: '2025-07-25T00:02:00'
+  description: Searches for existing tools in the registry that match the given keyword
+    or phrase.
+  name: tool_lookup
+  saved_in: tools/base_tools.py
+- created_at: '2025-07-26T18:20:22.655880'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., "10.0,2.0")'
+  name: divide_two_numbers
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T18:24:57.416639'
+  description: 'Divides two numbers. Input: two comma-separated floats (e.g., "339,77")'
+  name: divide_numbers
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T18:25:02.009139'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., "10.0,2.0")'
+  name: custom_divide
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T20:13:27.298845'
+  description: 'Adds two numbers together. Input: two comma-separated floats (e.g.,
+    ''1.0,2.0'')'
+  name: add_numbers
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T20:16:14.668942'
+  description: 'Subtracts the second number from the first number. Input: two comma-separated
+    floats (e.g., "888, 423")'
+  name: subtract_numbers
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T22:25:40.547930'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., ''10.0,2.0'')'
+  name: my_divide
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T22:25:50.965523'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., ''10.0,2.0'')'
+  name: custom_division_tool
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T23:21:54.129902'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., ''10.0,2.0'')'
+  name: my_new_divide_tool
+  saved_in: tools/generated_tools.py
+- created_at: '2025-07-26T23:24:03.921800'
+  description: 'Divides the first number by the second number. Input: a string containing
+    two comma-separated floats (e.g., ''10.0,2.0'')'
+  name: my_division_tool
+  saved_in: tools/generated_tools.py
